@@ -1,0 +1,7 @@
+operation,column,records_or_values_affected,action,reason
+Exact duplicate removal,All columns,0,Drop exact duplicate rows,Avoid duplicate weighting
+Text trimming,Object/string columns,1426,Strip leading/trailing whitespace,Standardise category labels
+Missing numeric values,Numeric predictor columns,39,Median imputation within training pipeline,Robust to skew; fit on train only
+Missing categorical values,Categorical predictor columns,0,Most-frequent imputation within training pipeline,Preserve records
+Identifier exclusion,record_id,1426,Exclude from X; retain in cleaned file,Avoid learning arbitrary ID patterns
+Target separation,yield_t_ha,1426,"Keep as y, not in X",Prevent target leakage

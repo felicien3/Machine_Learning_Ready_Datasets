@@ -1,0 +1,21 @@
+column,meaning,data_type,unit,allowed_values_or_notes
+record_id,Unique record code,Categorical,Identifier,Unique code per record
+year,Observation year,Integer,Year,2015–2024 in uploaded file
+season,Agricultural season,Categorical,Season,"A, B or C"
+province,Province,Categorical,Location,Rwandan province label
+district,District,Categorical,Location,District name
+altitude_m,Farm altitude,Numeric,Metres,Altitude above sea level
+rainfall_mm,Seasonal rainfall,Numeric,Millimetres,May contain missing values
+avg_temp_c,Average seasonal temperature,Numeric,Degrees Celsius,Average temperature
+soil_ph,Soil acidity/alkalinity,Numeric,pH,May contain missing values
+soil_type,Soil category,Categorical,Category,Observed soil classes
+seed_variety,Maize seed variety,Categorical,Category,Observed variety labels
+farming_practice,Farming practice type,Categorical,Category,Improved or Traditional
+npk_kg_ha,NPK fertiliser applied per hectare,Numeric,kg/ha,Rate per hectare
+urea_kg_ha,Urea fertiliser applied per hectare,Numeric,kg/ha,Rate per hectare
+manure_t_ha,Manure applied per hectare,Numeric,tonnes/ha,Rate per hectare
+plant_density_per_ha,Plant population per hectare,Integer,Plants/ha,Plant density
+farm_area_ha,Farm area,Numeric,Hectares,Farm size
+irrigation,Whether irrigation was used,Categorical,Yes/No,Binary category
+pest_incidence_index,Pest incidence index,Numeric,Index,Index scale needs source confirmation
+yield_t_ha,Maize yield per hectare — target,Numeric,tonnes/ha,Target for later modelling; not a predictor

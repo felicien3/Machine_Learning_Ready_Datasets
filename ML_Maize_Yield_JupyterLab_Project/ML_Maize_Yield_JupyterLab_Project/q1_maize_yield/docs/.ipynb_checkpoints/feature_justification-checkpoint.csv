@@ -1,0 +1,8 @@
+feature,creation,justification
+total_fertiliser_kg_ha,npk_kg_ha + urea_kg_ha,Summarises inorganic fertiliser application; relevant to input/yield question.
+rainfall_per_degree,rainfall_mm / avg_temp_c,Combines two climate measures into a simple climate indicator.
+altitude_band,Bins altitude_m into four bands,Makes geographic elevation groups easier to compare.
+soil_ph_group,Groups soil pH into three bands,Represents soil acidity categories.
+npk_urea_ratio,npk_kg_ha / urea_kg_ha,Describes balance between two fertiliser application rates.
+season_year,year + season,Captures the time period and agricultural season.
+total_input_indicator,NPK + urea + manure,"Exploratory combined indicator only; units are mixed, so use cautiously."

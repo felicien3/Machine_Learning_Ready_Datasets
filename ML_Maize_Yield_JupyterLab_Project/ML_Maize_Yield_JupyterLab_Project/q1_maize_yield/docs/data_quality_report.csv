@@ -1,0 +1,8 @@
+problem,affected_column,records_affected,severity,proposed_treatment
+Missing rainfall values,rainfall_mm,11,Medium,Impute using training-set median; preserve raw file.
+Missing soil pH values,soil_ph,14,Medium,Impute using training-set median; record limitation.
+Missing pest index values,pest_incidence_index,14,Medium,Impute using training-set median; record limitation.
+Exact duplicate rows,All columns,0,Low,Remove only if duplicates are found.
+Duplicate record IDs,record_id,0,High,Investigate and resolve if any occur.
+Identifier column,record_id,1426,Low,Exclude from model predictors; retain for traceability.
+Target column is post-harvest,yield_t_ha,1426,High,Keep as target only; never include as an input feature.
